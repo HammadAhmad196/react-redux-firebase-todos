@@ -12,6 +12,7 @@ import Heading from "../../../components/UI/Heading/Heading";
 import Message from "../../../components/UI/Message/Message";
 import CustomLink from "../../../components/UI/CustomLink/CustomLink";
 import GoogleAuth from "../GoogleAuth/GoogleAuth";
+import FacebookAuth from "../FaceBookAuth/FacebookAuth";
 
 const MessageWrapper = styled.div`
   position: absolute;
@@ -78,6 +79,7 @@ const Login = ({ login, loading, error, cleanUp }) => {
               Forgot your password?
             </CustomLink>
             <GoogleAuth />
+            <FacebookAuth />
             <MessageWrapper>
               <Message error show={error}>
                 {error}
